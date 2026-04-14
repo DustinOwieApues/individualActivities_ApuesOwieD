@@ -1,0 +1,85 @@
+# FINALS Assignment–ApuesOwie #1
+
+print("=== Python Data Structures Operations ===\n")
+
+
+#_________[List]___________
+print("•List")
+
+og_list = [1, 3, 5, 7, 11]
+print(f"Innitial list: {og_list}")
+
+og_list.append(13)
+print(f"After adding 13: {og_list}")
+
+og_list.remove(7)
+print(f"After removing 7: {og_list}")
+
+og_list.sort()
+print(f"After sorting: {og_list}")
+
+print("\n" + "="*40 + "\n")
+
+
+
+#______[Tuple]______
+print("•Tuple")
+
+og_tuple = (10, 20, 30, 40, 50)
+print(f"First tuple: {og_tuple}")
+
+
+try:
+    og_tuple[2] = 99
+    print("Mod success")
+except TypeError as e:
+    print(f"Error when trying to mod tuple: {e}")
+    print("Tuples are immutable–you cannot change their elements after creation.")
+
+print("\n" + "="*40 + "\n")
+
+
+
+#______[Set]______
+print("•Set")
+
+fr_set = {2, 4, 6, 8, 10}
+print(f"Innitial set: {fr_set}")
+
+fr_set.add(12)
+print(f"After adding 12: {fr_set}")
+
+fr_set.remove(6)
+print(f"After removing 6: {fr_set}")
+
+print(f"Updated set: {fr_set}")
+
+print("\n" + "="*40 + "\n")
+
+
+
+#______[Dictionary]______
+print("•Dictionary")
+
+# Create a sample dictionary
+mah_dict = {
+    "Name": "Owie",
+    "Age": 19,
+    "City": "Taguig"
+}
+print(f"Innitial dictionary: {mah_dict}")
+
+# Add a new key "grade"
+mah_dict["Grade"] = "99"
+print(f"After adding ''Grade'': {mah_dict}")
+
+# Update your "age"
+mah_dict["Age"] = 21
+print(f"After updating Age to 21: {mah_dict}")
+
+# Print all keys
+print("All keys in the dictionary:")
+for key in mah_dict.keys():
+    print(f"- {key}")
+
+print("\n" + "="*40)
