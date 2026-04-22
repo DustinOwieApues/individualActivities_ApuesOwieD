@@ -1,0 +1,69 @@
+#1. Basic List Activities
+
+#Activity 1
+fruits = ["apple", "banana", "cherry"]
+print("Activity 1:", fruits)
+
+# Activity 2
+# fruits = ["apple", "banana", "cherry"]
+print("Activity 2 (First):", fruits[0])
+print("Activity 2 (Last):", fruits[-1])
+
+# Activity 3
+colors = ["red", "blue", "green", "yellow"]
+print("Activity 3 (Length):", len(colors))
+
+
+#2. Modify Lists
+
+#Activity 4
+fruits = ["apple", "banana", "cherry"]
+fruits[1] = "orange"
+print("Activity 4 (Updated):", fruits)
+
+#Activity 5
+fruits = ["apple", "banana"]
+fruits.append("mango")      
+fruits.insert(1, "grape")   
+print("Activity 5 (Added):", fruits)
+
+#Activity 6
+fruits = ["apple", "banana", "cherry"]
+fruits.remove("banana")
+fruits.pop()
+print("Activity 6 (Remaining):", fruits)
+
+
+#3. Looping Through Lists
+
+#Activity 7
+animals = ["dog", "cat", "bird"]
+print("Activity 7:")
+for animal in animals:
+    print(animal)
+
+#Activity 8
+numbers = [10, 20, 30]
+print("Activity 8:")
+for i in range(len(numbers)):
+    print(f"{i} : {numbers[i]}")
+
+
+#4. List Operations
+
+#Activity 9
+fruits = ["apple", "banana", "cherry"]
+if "banana" in fruits:
+    print("Activity 9: Yes, 'banana' is in the list")
+
+#Activity 10
+nums = [5, 2, 9, 1]
+nums.sort()                 
+print("Activity 10 (Ascending):", nums)
+nums.sort(reverse=True)     
+print("Activity 10 (Descending):", nums)
+
+#Activity 11
+list1 = ["a", "b", "c"]
+list2 = list1.copy()
+print("Activity 11 (Copied List):", list2)
