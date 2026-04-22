@@ -1,0 +1,33 @@
+#Activity 1
+numbers = [1, 2, 2, 3, 4, 4, 5]
+removed_dups = set(numbers)
+print("Activity 1:", removed_dups)
+
+
+#Activity 2
+fruits = {"apple", "banana"}
+fruits.add("orange")
+fruits.remove("banana")
+print("Activity 2:", fruits)
+
+
+#Activity 3
+A = {1, 2, 3}
+B = {3, 4, 5}
+
+union = A | B
+intersection = A & B
+
+print("Activity 3: (U):", union)
+print("A (∩):", intersection)
+
+
+#Activity 4
+classA = {"John", "Ana", "Mark"}
+classB = {"Ana", "Mark", "Liza"}
+
+both_classes = classA & classB
+all_students = classA | classB
+
+print(" Activity 4: (Students in Both):", both_classes)
+print("(All Students):", all_students)
