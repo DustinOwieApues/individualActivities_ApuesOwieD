@@ -1,0 +1,42 @@
+#Activity 1
+student = {
+    "name": "Ana",
+    "age": 20,
+    "course": "IT"
+}
+
+# Accessing the value using the key "name"
+print("Activity 1 (Student Name):", student["name"])
+
+
+#Activity 2
+student = {"name": "Ana", "age": 20}
+
+student["grade"] = 95
+
+student["age"] = 21
+
+print("Activity 2 (Updt Dict):", student)
+
+
+#Activity 3:
+car = {"brand": "Toyota", "model": "Corolla", "year": 2020}
+
+print("Activity 3 (Car Deets):")
+for key, value in car.items():
+    print(f"{key} : {value}")
+
+
+#Activity 4
+phonebook = {
+    "Dusk": "143-6969",
+    "Nian": "143-6767",
+    "Ling": "143-0404"
+}
+
+name_input = input("Enter a name to look up in the phonebook: ")
+
+if name_input in phonebook:
+    print(f"The number for {name_input} is: {phonebook[name_input]}")
+else:
+    print(f"Sorry, {name_input} was not found in the phonebook.")
